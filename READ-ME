@@ -1,0 +1,5 @@
+This is my personal project where I try to use publicly available data to analyze sports and hopefully create stats, evaluate players, etc.
+
+Current sections:
+NBA Rebounding - mostly just testing a script
+NFL Field Goals - currently testing methods of modeling field goal success
