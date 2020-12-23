@@ -2,4 +2,14 @@ This is my personal project where I try to use publicly available data to analyz
 
 Current sections:
 NBA Rebounding - mostly just testing a script
-NFL Field Goals - currently testing methods of modeling field goal success
+NFL Analytics
+- currently testing methods of modeling field goal success
+    ~ comparing kicker graphs (accuracy vs. distance) to the graph that has all kicks within the past few years
+- using Yards Per Play and game-by-game lineups to estimate the average value of NFL players
+    ~ heavily inspired by Ben Taylor's WOWYR stat for the NBA (https://backpicks.com/metrics/wowyr/), and is thus names WOWYR as well
+    ~ name is subject to change
+    ~ currently working on collecting yards per play and lineups for every game within the last 5 or so years
+    ~ there is no formula, but instead least squares regression (ideally, the sum of all the WOWYR of each player playing in a game is the YPP for that game)
+    ~ doing it for defense too, but special teams don't work
+    ~ players who take part in under 20% of the snaps on offense or defense will not count as having played because their impact is too little
+    ~ will potentially scale every "participation" value to the number of snaps they played for, but this may mess up data big time and is much harder to scrape for
